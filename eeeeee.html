@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+Tính giai thừa của một số nguyên dương
+<br><br>
+<input type="number" id="input">
+<button onclick="print()">Tính</button>
+<p id="result"></p>
+<script>
+
+  function print() {
+    let n = parseInt(document.getElementById('input').value);
+    let s = 1;
+
+    if (n < 0) {
+      document.getElementById('result').innerText = 'Không tính được số âm.'
+    } else {
+      for (let i = 1; i <= n; i++) {
+        s *= i;
+      }
+      document.getElementById('result').innerText = s;
+    }
+  }
+
+</script>
+
+</body>
+</html>

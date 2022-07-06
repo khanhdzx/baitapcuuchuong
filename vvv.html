@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Bảng Cửu Chương</h1>
+<table border="1" style="width: 100%">
+    <script>
+        let vipVai =''
+        for (let i=1; i<=10 ;i++) {
+            vipVai += '<tr>'
+            for (let x = 2; x <= 10; x++) {
+                vipVai += '<td>' + x + 'x' + i + '=' + x * i + '</td>'
+            }
+                vipVai += '</tr>'
+            }
+            document.write(vipVai)
+        for (let i=1; i<=10 ;i++){
+            console.log("i===",i)
+            for (let x=2 ;x<=10 ; x++){
+                console.log("x===",x)
+            }
+        }
+    </script>
+</table>
+</body>
+</html>
